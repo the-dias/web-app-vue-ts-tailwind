@@ -1,19 +1,3 @@
-<!-- <script setup lang="ts">
-import "./styles/styles.css";
-import { ref } from "vue";
-
-let data = {};
-const fetchData = async function () {
-  try {
-    const response = await fetch("http://localhost:8000/");
-    data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error("Error fetching data...", error);
-  }
-};
-</script> -->
-
 <script lang="ts">
 import { ref } from "vue";
 import "./styles/styles.css";
@@ -186,9 +170,7 @@ const currentPage = ref(0);
             scope="row"
             class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >
-            <!-- {{ index = currentPage + 11 }} -->
-            <!-- {{ data }} -->
-            <!-- {{ data }} -->
+            
             {{ dataJson.time[index] }}
             <!-- {{ dataJson[20] }} -->
           </th>
